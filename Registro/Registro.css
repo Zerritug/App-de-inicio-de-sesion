@@ -1,0 +1,59 @@
+body {
+    background-image: linear-gradient(white, rgba(128, 128, 128, 0.445));
+    background: no-repeat;
+    margin: 0; 
+    display: flex; 
+    justify-content: center; 
+}
+
+#Main-Registro {
+    background-color: rgb(245, 245, 245);
+    padding: 20px 10px;
+    margin: 50px auto; 
+    padding-bottom: 400px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    width: 30%;
+}
+
+#header {
+    justify-content: center;
+    justify-items: center;
+    color: rgb(75, 74, 74);
+}
+
+#Nombres {
+    padding: 5px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#Nombres .Nombres input {
+    display: flex;
+    flex-direction: row; /* Organiza el texto y el input en columna */
+    gap: 10px; /* Espacio entre el texto y el input */
+    align-items: flex-start; /* Alinea al inicio (izquierda) */
+}
+
+#CorreoC {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Organiza correo y contraseña en columna */
+    gap: 20px; /* Espacio entre Correo y Contraseña */
+    align-items: flex-start; /* Alinea al inicio (izquierda) */
+}
+
+#CorreoC .Correo, #CorreoC .Contraseña {
+    display: flex;
+    flex-direction: column; /* Texto y campo en columna */
+    gap: 5px; /* Espacio entre el texto y el input */
+}
+
+#CorreoC .Correo input, #CorreoC .Contraseña input {
+    width: 275%; /* Ocupa el 75% del ancho de #Main-Registro */
+    padding: 8px; /* Espacio interno dentro del input */
+    border: 1px solid #ccc; /* Borde del input */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
