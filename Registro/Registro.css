@@ -18,13 +18,13 @@ body {
     margin: 30px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(0, 0, 0, 0.15); 
     width: 90%;
-    max-width: 500px;
+    max-width: 550px;
     box-sizing: border-box;
     transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.5s ease; 
 }
 
 #Main-Registro #Cambio {
-    margin-left: 380px;
+    margin-left: 440px;
 }
 
 #Main-Registro #Cambio button {
@@ -79,14 +79,17 @@ body {
 }
 
 #CorreoC .input-container img {
+    width: 40px; /* Aumenta el tamaño de la imagen */
+    height: 40px; /* Aumenta el tamaño de la imagen */
     position: absolute;
     top: 50%;
-    right: 10px;
+    right: 2px;
     transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
     cursor: pointer;
     transition: filter 0.5s ease, transform 0.3s ease;
+    border: 1px solid #000000; /* Ajusta el borde para que combine con los inputs */
+    border-radius: 5px; /* Redondea las esquinas para que coincida con los inputs */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #CorreoC .mascondiciones {
@@ -106,7 +109,7 @@ body {
 }
 
 #Extras .botonR {
-    background-color: rgb(51, 116, 255);
+    background-color: #3374ff;
     color: white;
     border: none;
     border-radius: 10px;
@@ -118,6 +121,10 @@ body {
     font-size: 16px; 
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease; 
+}
+#Extras .botonR a {
+    color: white;
+    text-decoration: none;
 }
 
 #Extras .botonR:hover {
@@ -136,7 +143,7 @@ body {
 
 /* Paleta Oscura */
 body.oscuro {
-    background-color: black;
+    background-color: rgb(41, 40, 40);
 }
 
 body.oscuro #header h1{
@@ -144,14 +151,14 @@ color: white;
 }
 
 body.oscuro #Main-Registro {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(41, 40, 40);
     color: rgb(255, 255, 255);
     border: solid 1px rgba(200, 200, 200, 0.712);
     box-shadow: 8px 8px 14px rgba(255, 255, 255, 0.2), -8px -8px 14px rgba(255, 255, 255, 0.1);
 }
 
 body.oscuro #Main-Registro #Cambio button {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(41, 40, 40);
     color: white;
     border: white 1px solid;
 }
@@ -175,4 +182,7 @@ body.oscuro #CorreoC input[type="password"] {
     color: rgb(200, 200, 200);
     border: 1px solid rgb(200, 200, 200);
 
+}
+body.oscuro #CorreoC .input-container img {
+    filter: invert();
 }

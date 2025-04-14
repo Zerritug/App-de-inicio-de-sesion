@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion Z</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Inicio.css">
+</head>
+<body>
+    
+
+<div id="Main-Inicio">
+    <div id = "Cambio">
+        <button id = "CambioDeColor"><img src="img/moon.svg" alt=""></button>
+
+    </div>
+    <div class="header">
+        <h1>Iniciar sesion</h1>
+        <p>Accede a tu cuenta</p>
+    </div>
+   
+    <div class="InicioS">
+        <div class="Correo">
+            <p>Correo electronico</p>
+        <input type="email" name="correo" id="CorreoI" placeholder="ejemplo@dominio.com">
+        </div>
+        <div class="contra">
+            <p>Contraseña</p>
+            <input type="password" name="contraseña" id="ContraI">
+            <img id="eye" src="img/icon.svg" alt="Mostrar contraseña">
+        </div>
+        <div id="recordarme">
+            <input type="checkbox" name="Recuerdame" id="recuerdame"> Recordarme
+        </div>
+        <div class="Boton"><button> <a href="/Ex/inicioex.html">Iniciar sesion</a></button></div>
+
+        <div class="alternativas">
+            <p>O iniciar sesion con:</p>
+            <button id = "gmail">Gmail</button>
+            <img id="gma"  src="img/gmail.svg" alt="">
+            <button id = "outlook">Outlook</button>
+            <img id="outlok" src="img/outlook.svg" alt="">
+        </div>
+        <div class="extras">
+            <a href="/App-de-inicio-de-sesion/Recuperar/Recuperar.html">¿Olvidaste tu contraseña?</a> 
+            <div class="registro">
+                <p>¿No tienes cuenta ? <a href="/App-de-inicio-de-sesion/Registro/Registro.html">Registrate </a> </p>
+            </div>
+            
+        </div>
+
+    </div>
+</div>
+<script>
+    // Esto sirve para el cambio de color con el fondo y el ícono
+const changeThemeButton = document.querySelector("#Main-Inicio #Cambio button");
+const body = document.body;
+const icono = document.querySelector("#CambioDeColor img");
+
+changeThemeButton.addEventListener("click", () => {
+    if (body.classList.contains("oscuro")) {
+        
+        body.classList.remove("oscuro");
+        icono.src = "img/moon.svg"; 
+        icono.alt = "Modo oscuro"; 
+    } else {
+        // Cambia a modo oscuro
+        body.classList.add("oscuro");
+        icono.src = "img/sun.svg"; 
+        icono.alt = "Modo claro";
+    }
+});
+
+</script>
+</body>
+</html>

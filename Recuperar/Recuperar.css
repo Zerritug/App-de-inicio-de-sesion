@@ -1,0 +1,71 @@
+body {
+    background-color: white;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Pantalla completa */
+    transition: background-image 0.5s ease;
+}
+
+.main-recuperar {
+    background-color: rgb(233, 230, 230);
+    margin: 20px auto;
+    padding: 30px 20px; 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), -4px -4px 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px; 
+    border-radius: 8px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    text-decoration: none;
+}
+
+.main-recuperar h1 {
+    text-align: center;
+    width: 100%; 
+    color: rgb(75, 74, 74);
+    margin-bottom: 20px; 
+    transition: color 0.5s ease;
+}
+
+.main-recuperar input {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.main-recuperar button {
+    margin-top: 10px;
+    background-color: #3374ff;
+    color: white;
+    padding: 10px 20px; 
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    align-self: center; 
+   
+}
+.main-recuperar button  a{
+    color: white;
+    text-decoration: none;
+}
+
+.main-recuperar .inicio {
+    margin-top: 10px;
+    text-align: center; 
+    color: #3374ff;
+    text-decoration: none;
+    align-self: center; 
+}
+
+.main-recuperar .inicio:hover {
+    text-decoration: underline; 
+}
+
